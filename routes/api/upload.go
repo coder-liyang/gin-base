@@ -1,10 +1,10 @@
 package api
 
 import (
-	"liyangweb.com/z-library/pkg/e"
-	"liyangweb.com/z-library/pkg/logging"
-	"liyangweb.com/z-library/pkg/upload"
 	"github.com/gin-gonic/gin"
+	"liyangweb.com/gin-base/pkg/e"
+	"liyangweb.com/gin-base/pkg/logging"
+	"liyangweb.com/gin-base/pkg/upload"
 	"net/http"
 )
 

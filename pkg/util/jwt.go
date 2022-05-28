@@ -1,7 +1,7 @@
 package util
 
 import (
-	"liyangweb.com/z-library/pkg/setting"
+	"liyangweb.com/gin-base/pkg/setting"
 	jwt "github.com/dgrijalva/jwt-go"
 	"time"
 )

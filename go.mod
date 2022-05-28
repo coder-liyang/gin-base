@@ -1,4 +1,4 @@
-module liyangweb.com/z-library
+module liyangweb.com/gin-base
 
 go 1.17
 

@@ -2,7 +2,7 @@ package gredis
 
 import (
 	"encoding/json"
-	"liyangweb.com/z-library/pkg/setting"
+	"liyangweb.com/gin-base/pkg/setting"
 	"github.com/gomodule/redigo/redis"
 	"time"
 )
