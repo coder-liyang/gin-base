@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"liyangweb.com/z-library/pkg/logging"
-	"liyangweb.com/z-library/pkg/setting"
-	"liyangweb.com/z-library/routes"
+	"liyangweb.com/gin-base/pkg/logging"
+	"liyangweb.com/gin-base/pkg/setting"
+	"liyangweb.com/gin-base/routes"
 	"net/http"
 )
 

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"liyangweb.com/z-library/pkg/e"
+	"liyangweb.com/gin-base/pkg/e"
 	"github.com/gin-gonic/gin"
 )
 

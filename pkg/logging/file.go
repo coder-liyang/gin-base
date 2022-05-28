@@ -2,8 +2,8 @@ package logging
 
 import (
 	"fmt"
-	"liyangweb.com/z-library/pkg/file"
-	"liyangweb.com/z-library/pkg/setting"
+	"liyangweb.com/gin-base/pkg/file"
+	"liyangweb.com/gin-base/pkg/setting"
 	"os"
 	"time"
 )

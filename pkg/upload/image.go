@@ -2,10 +2,10 @@ package upload
 
 import (
 	"fmt"
-	"liyangweb.com/z-library/pkg/file"
-	"liyangweb.com/z-library/pkg/logging"
-	"liyangweb.com/z-library/pkg/setting"
-	"liyangweb.com/z-library/pkg/util"
+	"liyangweb.com/gin-base/pkg/file"
+	"liyangweb.com/gin-base/pkg/logging"
+	"liyangweb.com/gin-base/pkg/setting"
+	"liyangweb.com/gin-base/pkg/util"
 	"log"
 	"mime/multipart"
 	"os"

@@ -1,8 +1,8 @@
 package jwt
 
 import (
-	"liyangweb.com/z-library/pkg/e"
-	"liyangweb.com/z-library/pkg/util"
+	"liyangweb.com/gin-base/pkg/e"
+	"liyangweb.com/gin-base/pkg/util"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"time"

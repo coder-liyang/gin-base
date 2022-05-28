@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"liyangweb.com/z-library/pkg/setting"
+	"liyangweb.com/gin-base/pkg/setting"
 	"log"
 	"time"
 )

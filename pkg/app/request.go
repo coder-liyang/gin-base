@@ -1,7 +1,7 @@
 package app
 
 import (
-	"liyangweb.com/z-library/pkg/logging"
+	"liyangweb.com/gin-base/pkg/logging"
 	"github.com/astaxie/beego/validation"
 )
 
