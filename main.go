@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"liyangweb.com/gin-base/models"
 	"liyangweb.com/gin-base/pkg/logging"
 	"liyangweb.com/gin-base/pkg/setting"
 	"liyangweb.com/gin-base/routes"
@@ -10,7 +11,7 @@ import (
 
 func main() {
 	setting.Setup()
-	//models.Setup()
+	models.Setup()
 	logging.Setup()
 
 	router := routes.InitRouter()
