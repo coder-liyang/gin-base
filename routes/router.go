@@ -2,10 +2,10 @@ package routes
 
 import (
 	"github.com/gin-gonic/gin"
-	"liyangweb.com/gin-base/middleware/jwt"
 	"liyangweb.com/gin-base/pkg/e"
 	"liyangweb.com/gin-base/pkg/setting"
 	"liyangweb.com/gin-base/routes/api"
+	v1 "liyangweb.com/gin-base/routes/api/v1"
 	"net/http"
 )
 
@@ -26,10 +26,10 @@ func InitRouter() *gin.Engine {
 	//r.StaticFS("/upload/images", http.Dir(upload.GetImageFullPath()))
 
 	apiv1 := r.Group("/api/v1")
-	apiv1.Use(jwt.JWT())
+	//apiv1.Use(jwt.JWT())
 	{
 		//获取列表
-		//apiv1.GET("/contents", v1.GetContents)
+		apiv1.GET("/letter/:userid", v1.GetLetters)
 	}
 	return r
 }
