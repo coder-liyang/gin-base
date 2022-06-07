@@ -17,3 +17,15 @@ func GetLetters(c *gin.Context) {
 
 	appG.Response(http.StatusOK, e.SUCCESS, models.Letter{}.GetAll(page, userid))
 }
+
+func GetLetter(c *gin.Context) {
+	appG := app.Gin{c}
+	id, _ := strconv.Atoi(c.Param("id"))
+	letter := models.Letter{}
+	models.Letter{}.GetOneById(id, &letter)
+	if letter.ID > 0 {
+		appG.Response(http.StatusOK, e.SUCCESS, letter)
+	} else {
+		appG.Response(http.StatusOK, e.ERROR_DATA_NOT_FOUND, nil)
+	}
+}

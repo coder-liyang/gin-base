@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	_ "github.com/jinzhu/gorm"
 )
 
@@ -26,7 +25,6 @@ func (m Letter) GetAll(page int64, userid int) []Letter {
 	var limit int64 = 20
 	offset = (page - 1) * limit
 	d := db.Offset(offset).Limit(limit)
-	fmt.Println(userid)
 	if userid > 0 {
 		d = d.Where("to_userid = ?", userid)
 	}

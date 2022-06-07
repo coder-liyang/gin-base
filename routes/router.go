@@ -29,7 +29,8 @@ func InitRouter() *gin.Engine {
 	//apiv1.Use(jwt.JWT())
 	{
 		//获取列表
-		apiv1.GET("/letter/:userid", v1.GetLetters)
+		apiv1.GET("/letters/:userid", v1.GetLetters)
+		apiv1.GET("/letter/:id", v1.GetLetter)
 	}
 	return r
 }
