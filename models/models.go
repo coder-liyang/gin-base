@@ -38,7 +38,7 @@ func Setup() {
 	db.Callback().Update().Replace("gorm:update_time_stamp", updateTimeStampForUpdateCallback)
 	db.Callback().Delete().Replace("gorm:delete", deleteCallback)
 	//自动建表
-	db.AutoMigrate(User{}, Letter{})
+	db.AutoMigrate(User{}, Letter{}, Auth{})
 }
 func CloseDB() {
 	defer db.Close()
